@@ -1,0 +1,194 @@
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+ 
+
+p,
+pre {
+    margin: 1.5em 0px;
+}
+ 
+h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0px;
+    vertical-align: baseline;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+input[type="search"] {
+    appearance: textfield;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    appearance: none;
+}
+
+body {
+    font-family:  sans-serif;
+    /* font-weight: 400; */
+    /* line-height: 26px; */
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(50, 50, 50);
+    /* -webkit-font-smoothing: antialiased; */
+    /* padding-top: 0px !important; */
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0px;
+}
+ 
+h2 {
+    margin: 10px 0px;
+    font-size: 1.7em;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+
+strong,
+b {
+    font-weight: 700;
+    display: block;
+}
+
+.block-citation {
+    background: rgb(248, 248, 248);
+    padding: 0px 2em;
+    margin-bottom: 30px;
+    
+    color: rgb(102, 102, 102);
+    font-size: 0.813em;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.block-citation::before {
+    display: block;
+    content: "";
+     height: 25px;
+    margin: 0px;
+    width: 28px;
+}
+
+.block-citation em::after {
+    display: block;
+    content: "";
+     height: 0.5em;
+    margin: 0px;
+}
+
+.block-citation .exergue {
+    text-align: left;
+    display: block;
+}
+
+.block-citation .exergue {
+    
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(0, 113, 187);
+    font-size: 1.692em;
+}
+
+.node-type-article-afp .field-name-body,
+.node-article .field-name-field-texte {
+    /* border-bottom: 1px solid rgb(193, 193, 193); */
+    /* padding-bottom: 30px; */
+    overflow: hidden;
+    color: rgb(34, 34, 34);
+    /* font-size: 1.25em; */
+    line-height: 1.5;
+}
+
+.node-type-article-afp .field-name-body h2,
+.node-type-article-afp .field-name-body h3,
+.node-type-article-afp .field-name-body h4,
+.node-type-article-afp .field-name-body h5,
+.node-article .field-name-field-texte h2,
+.node-article .field-name-field-texte h3,
+.node-article .field-name-field-texte h4,
+.node-article .field-name-field-texte h5 {
+    font-family:  sans-serif;
+    color: rgb(68, 68, 68);
+    font-size: 1.35em;
+    line-height: 1.4;
+}
+ 
+.field-name-field-resume h2 {
+    font-size: 1.2em;
+    /* line-height: 1.4em; */
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+h2,
+h3,
+hr {
+    margin: initial;
+}
+
+.controls {
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    top: 0px;
+    background-color: white;
+    z-index: 12;
+    left: 0px;
+    border-bottom: 1px solid grey;
+}
+
+input#searchInput {
+    margin: 0 1em 1em 2em;
+    display: inline-block;
+    width: calc(100% - 4em);
+}
+
+div#textDiv {
+    margin-top: 2em;
+    padding: 2em 1em;
+}
+
+::highlight(match) {
+    background-color: orangered;
+    color: white;
+}
