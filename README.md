@@ -1,4 +1,4 @@
-# Novel easy way to highlight text in a web page
-With modern Custom Highlight API you do not have to modify the DOM to highlight text fragments
+# Fuzzy search for keywords in free text
+Free text entered by users might have typos. How to find approximate, misspelt matches to the searched string?
 
-Sample code for my post https://marian-caikovski.medium.com/novel-easy-way-to-highlight-text-in-a-web-page-96ab1ee72795 exploring the novel technique of highligting text ranges
+Sample code for my post https://marian-caikovski.medium.com/fuzzy-search-for-keywords-in-free-text-f732ecdc9519 exploring fuzzy search for missplelt keywords

@@ -44,15 +44,13 @@ export default class HighlightingElement {
 
     constructor(container) {
         this.nodes = mapNodes(container);
-        this.text = container.textContent;
-        this.container = container;
 
-        const matches = [...this.text.matchAll(new RegExp(RE_STR, 'dgu'))];
+        const matches = [...container.textContent.matchAll(new RegExp(RE_STR, 'dgu'))];
 
         const words = matches.map(match => {
             const str = match[0];
-            const start = match.indices[0][0];
-            const end = match.indices[0][1];
+
+            const [start,end] = match.indices[0] ;
 
             const [startContainer, startOffset] = this.getBoundaryPoint(start);
             const [endContainer, endOffset] = this.getBoundaryPoint(end);
@@ -64,7 +62,7 @@ export default class HighlightingElement {
 
     getMatches(strs) {
         return strs.filter(str => str.length >= MIN_LENGTH)
-            .map(str => removeDiactrics(str))
+            .map(str => removeDiactrics(str).toLowerCase())
             .flatMap(str => this.map
                 .filter(([k]) => Math.abs(str.length - k.length) <= MISMATHCES_ALLOWED)
                 .filter(([k]) => damerauLevenshtein(str, k) <= MISMATHCES_ALLOWED)
