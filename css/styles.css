@@ -176,7 +176,10 @@ hr {
     left: 0px;
     border-bottom: 1px solid grey;
 }
-
+.controls p {
+    margin: 0;
+    text-align: center;
+}
 input#searchInput {
     margin: 0 1em 1em 2em;
     display: inline-block;
